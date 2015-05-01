@@ -24,7 +24,7 @@ public class CreatureController : MonoBehaviour {
 			return;
 
 		target = transform.position + new Vector3(x, y, 0);
-		distancePerSecond = speed / new Vector3(x, y, 0).magnitude;
+		distancePerSecond = new Vector3(x, y, 0).magnitude / 1 * speed;
 		isMoving = true;
 		isReady = false;
 	}
